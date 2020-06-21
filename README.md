@@ -5,6 +5,13 @@ and/or an SAP affiliate company. The SAP Terms of Use found in document [Terms O
 
 ## Usage online
 
+### ### Select "Open Library/Github" from "File" menu
+![File menu](img/open_github.png) 
+### Press "Enter Value" and enter repository name "rsletta/scpdi_drawio_lib"
+![Enter value](img/enter_value.png)
+### Select library file from main branch / libs
+![Select File](img/main_libs.png)
+
 ## Usage desktop
 
 ### Download [Zip-file](SCP_Diagram_icons_Drawio_library.zip)
@@ -12,5 +19,7 @@ and/or an SAP affiliate company. The SAP Terms of Use found in document [Terms O
 ![File menu](img/open_library.png) 
 ### Select library file to import
 ![Library files](img/files.png)
-### Use assets 😊
+
+## Common 
+### Use assets with drag and drop 😊
 ![Loaded assets](img/loaded.png)
