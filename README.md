@@ -1,10 +1,13 @@
-# SAP Cloud Platform Solution Diagrams &amp; Icons - Custom draw.io library
+# SAP Business Technology Platform Solution Diagrams &amp; Icons - Custom draw.io library
+Based on v01 (for SAP BTP) from March 26th 2021 including Icon ZIP.
 
 Custom library for [Draw.io](https://app.diagrams.net/), based on [SAP Cloud Platform Solution Diagrams & Icons](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=477829554). These libraries are made for convenience and may be retracted at any time, on discretion by SAP SE. All rights reserved SAP SE. The SAP Materials and all copies shall remain at all times the exclusive property of SAP SE
 and/or an SAP affiliate company. The SAP Terms of Use found in document [Terms Of Use for the SAP Cloud Platform Solution Diagrams, Design Elements & Icons](https://d.dam.sap.com/a/nXJJmw/SAP%20Cloud%20Platform%20Diagrams%20and%20Icons%20Terms%20of%20Use.pdf) govern your use of these SAP materials (as defined in the Terms of Use), and related Content and web pages.
 
 ## Usage online
+The easiest way to consume one of these libraries, is to load them directly via det url paramter ['libs'](https://desk.draw.io/support/solutions/articles/16000042546-supported-url-parameters). List the library urls as a comma-separated string. (example: https://app.diagrams.net/?splash=0&clibs=Uhttps%3A%2F%2Fraw.githubusercontent.com%2Frsletta%2Fscpdi_drawio_lib%2Fmain%2Flibs%2FSAP_Cloud_Platform_Services.xml;Uhttps%3A%2F%2Fraw.githubusercontent.com%2Frsletta%2Fscpdi_drawio_lib%2Fmain%2Flibs%2FSAP_Cloud_Platform_Services_Circle.xml)
 
+## The other way
 ### ### Select "Open Library/Github" from "File" menu
 ![File menu](img/open_github.png) 
 ### Press "Enter Value" and enter repository name "rsletta/scpdi_drawio_lib"
@@ -14,7 +17,7 @@ and/or an SAP affiliate company. The SAP Terms of Use found in document [Terms O
 
 ## Usage desktop
 
-### Download [Zip-file](SCP_Diagram_icons_Drawio_library.zip)
+### Download [Zip-file](SAP_BTP_Diagram_Icons_Drawio_libraries.zip)
 ### Select "Open Library" from "File" menu
 ![File menu](img/open_library.png) 
 ### Select library file to import
