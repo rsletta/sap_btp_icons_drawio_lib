@@ -5,7 +5,7 @@ Custom library for [Draw.io](https://app.diagrams.net/), based on [SAP Business 
 and/or an SAP affiliate company. The SAP Terms of Use found in document [Terms Of Use for the SAP Business Technology Platform Solution Diagrams, Design Elements & Icons](https://d.dam.sap.com/a/nXJJmw/SAP%20Cloud%20Platform%20Diagrams%20and%20Icons%20Terms%20of%20Use.pdf) govern your use of these SAP materials (as defined in the Terms of Use), and related Content and web pages.
 
 ## Usage online
-The easiest way to consume one of these libraries, is to load them directly via det url paramter ['libs'](https://desk.draw.io/support/solutions/articles/16000042546-supported-url-parameters). List the library urls as a comma-separated string. (example: https://app.diagrams.net/?splash=0&clibs=Uhttps%3A%2F%2Fraw.githubusercontent.com%2Frsletta%2Fscpdi_drawio_lib%2Fmain%2Flibs%2FSAP_Cloud_Platform_Services.xml;Uhttps%3A%2F%2Fraw.githubusercontent.com%2Frsletta%2Fscpdi_drawio_lib%2Fmain%2Flibs%2FSAP_Cloud_Platform_Services_Circle.xml)
+The easiest way to consume one of these libraries, is to load them directly via det url paramter ['libs'](https://desk.draw.io/support/solutions/articles/16000042546-supported-url-parameters). List the library urls as a semi-colon separated string. (example: https://app.diagrams.net/?splash=0&clibs=Uhttps%3A%2F%2Fraw.githubusercontent.com%2Frsletta%2Fscpdi_drawio_lib%2Fmain%2Flibs%2FSAP_Cloud_Platform_Services.xml;Uhttps%3A%2F%2Fraw.githubusercontent.com%2Frsletta%2Fscpdi_drawio_lib%2Fmain%2Flibs%2FSAP_Cloud_Platform_Services_Circle.xml)
 
 ## The other way
 ### ### Select "Open Library/Github" from "File" menu
