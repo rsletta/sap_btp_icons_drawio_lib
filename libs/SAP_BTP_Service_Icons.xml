@@ -1,6 +1,14 @@
 <mxlibrary>
 [
-  {
+{
+  "url": "https://digitalmarketplace-sapcpprd.s3.eu-central-1.amazonaws.com/mBUHVI2lkrz4pxeyr1lxCWsJay9g5w1uGY6jsWMo8Iuq-kqJVKMQJ3c4qjksxqHC.svg",
+  "w": 30,
+  "h": 48,
+  "title": "SAP Data Quality Management, microservices for location data",
+  "aspect": "fixed",
+  "tags": ["sap", "btp", "lauffer", "Artificial Intelligence", "Development Efficiency", "ML", "Machine Learning", "Free Tier"]
+},
+{
     "data": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJhZ2VudHJ5IiB2aWV3Qm94PSIxMi45OTg3ODAyNTA1NDkzMTYgMy45OTk3ODQ3MDgwMjMwNzEzIDMwLjAwMjM0NjAzODgxODM2IDQ4LjAwMDUzNDA1NzYxNzE5IiB3aWR0aD0iMzAuMDAyMzQ2MDM4ODE4MzYiIGhlaWdodD0iNDguMDAwNTM0MDU3NjE3MTkiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMDUzYjcwO30uY2xzLTJ7ZmlsbDojMGE2ZWQxO308L3N0eWxlPjwvZGVmcz48dGl0bGU+YWdlbnRyeTwvdGl0bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMzcsNGE1Ljc4LDUuNzgsMCwwLDEsNC4yMTksMS43ODFBNS43OCw1Ljc4LDAsMCwxLDQzLDEwVjQ2YTUuNzI5LDUuNzI5LDAsMCwxLTEuNzgxLDQuMjY2QTUuODYsNS44NiwwLDAsMSwzNyw1MkgxOWE1Ljg1MSw1Ljg1MSwwLDAsMS00LjIxOS0xLjczNEE1LjcxOCw1LjcxOCwwLDAsMSwxMyw0NlYxMGE1Ljc2OCw1Ljc2OCwwLDAsMSwxLjc4MS00LjIxOUE1Ljc3LDUuNzcsMCwwLDEsMTksNFptMyw2SDE2VjQzSDQwWk0yOCw0OWEyLjI2LDIuMjYsMCwwLDAsMS41OTQtLjYwOSwyLjEzNCwyLjEzNCwwLDAsMCwuNjU2LTEuNjQxLDIuMjUsMi4yNSwwLDEsMC00LjUsMCwyLjEyMywyLjEyMywwLDAsMCwuNjU2LDEuNjQxQTIuMjUsMi4yNSwwLDAsMCwyOCw0OVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xOSwzNS4yMzMsMjYuMzg2LDE2aDIuNzQyTDM3LDM1LjIzM0gzNC4xbC0yLjI0NC01LjgyNUgyMy44MTVMMjEuNywzNS4yMzNabTUuNTUtNy45aDYuNTJsLTIuMDA3LTUuMzI2cS0uOTE5LTIuNDI4LTEuMzY1LTMuOTg5YTI0LjQ5MiwyNC40OTIsMCwwLDEtMS4wMzYsMy42NzRaIi8+PC9zdmc+",
     "w": 30,
     "h": 48,
