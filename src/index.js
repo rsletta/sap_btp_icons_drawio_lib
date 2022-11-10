@@ -10,9 +10,9 @@ async function main() {
             const tags = extendTags.split(',');
             return {
                 "url": item.Icon,
-                //"data": item.Icon,
-                "w": 48,
-                "h": 48,
+                "data": item.Icon,
+                "w": 56,
+                "h": 56,
                 "title": xmlEscape(item.Name),
                 "aspect": "fixed",
                 "tags": tags.map(tag => xmlEscape(tag))
