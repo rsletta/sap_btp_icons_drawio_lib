@@ -10,8 +10,8 @@ async function main() {
             const tags = extendTags.split(',');
             return {
                 "url": item.Icon,
-                "data": item.Icon,
-                "w": 30,
+                //"data": item.Icon,
+                "w": 48,
                 "h": 48,
                 "title": xmlEscape(item.Name),
                 "aspect": "fixed",
