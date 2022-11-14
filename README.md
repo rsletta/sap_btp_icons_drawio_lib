@@ -26,3 +26,10 @@ The easiest way to consume one of these libraries, is to load them directly via 
 ## Common 
 ### Use assets with drag and drop 😊
 ![Loaded assets](img/loaded.png)
+
+https://app.diagrams.net/?splash=0&clibs=Uhttps://raw.githubusercontent.com/mauriciolauffer/sap_btp_icons_drawio_lib/main/libs/SAP_BTP_Service_Icons_latest.xml
+
+## Auto create SAP BTP Service Icons Latest
+
+Git clone this repo `$ git clone ...`. Install dependencies `$ npm ci`. Run the app `$ npm start`.
+It will access SAP Discovery Center, fetch all services and their icons. The library `SAP_BTP_Service_Icons_latest.xml` will be created.
