@@ -1,0 +1,23 @@
+{
+  "name": "sap_btp_icons_drawio_lib",
+  "version": "0.0.1",
+  "description": "SAP BTP Icons - Draw.io custom library",
+  "author": "Mauricio Lauffer",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.js",
+  "homepage": "https://github.com/mauriciolauffer/sap_btp_icons_drawio_lib#readme",
+  "dependencies": {
+    "xml-escape": "^1.1.0"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauriciolauffer/sap_btp_icons_drawio_lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mauriciolauffer/sap_btp_icons_drawio_lib/issues"
+  }
+}
