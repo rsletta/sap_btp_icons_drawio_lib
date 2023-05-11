@@ -25,5 +25,5 @@ jobs:
           git add -A
           git config user.email "btpiconbot@users.noreply.github.com"
           git config user.name "BTP Icon Bot"
-          git diff --quiet && git diff --staged --quiet || git commit -m "[bot] $(date '+%Y-%m-%d %H:%M:%S'): updated BTP icons"
+          git diff --quiet && git diff --staged --quiet || git commit -m "[bot]: updated BTP icons"
           git push origin ${{ github.ref_name }}
