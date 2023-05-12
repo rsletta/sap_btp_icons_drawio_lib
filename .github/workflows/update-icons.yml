@@ -1,0 +1,29 @@
+name: Update SAP BTP Icons
+on:
+  schedule:
+   - cron: "0 0 * * 0"
+  workflow_dispatch: {}
+jobs:
+  fetch-icons:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+        name: "Checkout repository"
+
+      - name: "Setup Node.js"
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: "Install NodeJS dependencies"
+        run: |
+          npm ci
+      - name: "Read new SAP BTP metadata and update icons"
+        run: |
+          npm start
+          git add -A
+          git config user.email "btpiconbot@users.noreply.github.com"
+          git config user.name "BTP Icon Bot"
+          git diff --quiet && git diff --staged --quiet || git commit -m "[bot]: updated BTP icons"
+          git push origin ${{ github.ref_name }}
