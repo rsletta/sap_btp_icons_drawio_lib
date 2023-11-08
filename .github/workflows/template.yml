@@ -56,8 +56,7 @@ jobs:
         git add -A
         git config user.email "btpiconbot@users.noreply.github.com"
         git config user.name "BTP Icon Bot"
-        git diff --quiet && git diff --staged --quiet || git commit -m "[bot]: Added template"
-        # git push origin ${{ steps.branch_name.outputs.branch }}
+
     - uses: gr2m/create-or-update-pull-request-action@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
