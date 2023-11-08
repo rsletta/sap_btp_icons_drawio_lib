@@ -16,22 +16,22 @@ async function main() {
 const jsonBody = parse(body)
   console.log(jsonBody)
 
-const templateName = jsonBody.Title.raw.replace(/\s/g, "")
-const files = await readdir("./upload/", { withFileTypes: true, encoding: 'utf-8'})
-const regex = /\.xml$/
-if (files.length !== 1 || !regex.test(files[0].name)){
-  throw new Error("File isn't uploaded into the upload directory or file is not XML")
-} else {
-  const filename = files[0].name
+// const templateName = jsonBody.Title.raw.replace(/\s/g, "")
+// const files = await readdir("./upload/", { withFileTypes: true, encoding: 'utf-8'})
+// const regex = /\.xml$/
+// if (files.length !== 1 || !regex.test(files[0].name)){
+//   throw new Error("File isn't uploaded into the upload directory or file is not XML")
+// } else {
+//   const filename = files[0].name
 
-  await mkdir('./src/templates/test/')
-  const path = './src/templates/test/' +templateName
-  await mkdir(path)
-  await cp('./upload/' +filename, path +"/" +filename)
-    await writeFile(`${path}/${templateName}.md`,body)
-  await appendFile(`${path}/${templateName}.md`, `\n\n
-  [Open Diagram](https://app.diagrams.net/?create=https://raw.githubusercontent.com/${process.env.Repo}/${process.env.Branch}/src/templates/${templateName}/${filename}))`)
-}
+//   await mkdir('./src/templates/test/')
+//   const path = './src/templates/test/' +templateName
+//   await mkdir(path)
+//   await cp('./upload/' +filename, path +"/" +filename)
+//     await writeFile(`${path}/${templateName}.md`,body)
+//   await appendFile(`${path}/${templateName}.md`, `\n\n
+//   [Open Diagram](https://app.diagrams.net/?create=https://raw.githubusercontent.com/${process.env.Repo}/${process.env.Branch}/src/templates/${templateName}/${filename}))`)
+// }
  
 
 }
