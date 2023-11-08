@@ -14,6 +14,8 @@ async function main() {
   // const body = await readFile('./src/templates/principalpropagation/principalpropagation.md', 'utf-8')
 
 const jsonBody = parse(body)
+  console.log(jsonBody)
+
 const templateName = jsonBody.Title.raw.replace(/\s/g, "")
 const files = await readdir("./upload/", { withFileTypes: true, encoding: 'utf-8'})
 const regex = /\.xml$/
