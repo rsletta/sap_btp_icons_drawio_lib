@@ -1,4 +1,4 @@
-import { appendFile, cp, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { appendFile, cp, mkdir, readFile, readdir, writeFile, rm } from 'node:fs/promises';
 import {setOutput } from '@actions/core';
 import {parse} from 'md-2-json'
 /**
@@ -21,15 +21,29 @@ const regex = /\.xml$/
 if (files.length !== 1 || !regex.test(files[0].name)){
   throw new Error("File isn't uploaded into the upload directory or file is not XML")
 } else {
+  try {
   const filename = files[0].name
+  const path = './src/templates/test/' +templateName
+  const mdFilePath = `${path}/${templateName}.md`
+
 
   await mkdir('./src/templates/test/')
-  const path = './src/templates/test/' +templateName
   await mkdir(path)
   await cp('./upload/' +filename, path +"/" +filename)
-    await writeFile(`${path}/${templateName}.md`,body)
-  await appendFile(`${path}/${templateName}.md`, `\n\n
+    await writeFile(mdFilePath,body)
+  await appendFile(mdFilePath, `\n\n
   [Open Diagram](https://app.diagrams.net/?create=https://raw.githubusercontent.com/${process.env.Repo}/main/src/templates/${templateName}/${filename}))`)
+  await rm('./upload/' +filename)
+  const summary = await readFile('./src/SUMMARY.md', 'utf-8')
+  let summaryBody = parse(summary)
+  summaryBody.Templates.raw += `- [${jsonBody.Title.raw}](${mdFilePath})\n`
+  await writeFile('./src/SUMMARY.md', toMd(summaryBody))
+
+  }
+  catch (e) {
+    console.log(e)
+    throw new Error('Something went wrong!')
+  }
 }
  
 
