@@ -1,9 +1,9 @@
 import { cp } from 'node:fs/promises';
-const core = require('@actions/core');
+import {setOutput } from '@actions/core';
 
 async function main() {
   const path =  process.env.Title
-  core.setOutput("path", path);
+  setOutput("path", path);
 
 }
 
