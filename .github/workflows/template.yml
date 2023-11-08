@@ -33,6 +33,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       name: "Checkout repository"
+      with:
+        persist-credentials: false
     - name: "Setup Node.js"
       uses: actions/setup-node@v3
       with:
@@ -55,6 +57,9 @@ jobs:
         git config user.email "btpiconbot@users.noreply.github.com"
         git config user.name "BTP Icon Bot"
         git diff --quiet && git diff --staged --quiet || git commit -m "[bot]: Added template"
-        git push origin ${{ steps.branch_name.outputs.branch }}
+        # git push origin ${{ steps.branch_name.outputs.branch }}
+    - uses: gr2m/create-or-update-pull-request-action@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
 
