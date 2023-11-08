@@ -45,6 +45,7 @@ jobs:
         Body: ${{ github.event.pull_request.body }}
 
       run: |
+        echo "$Title"
         npm run create_template
         
 
