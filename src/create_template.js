@@ -1,7 +1,7 @@
 import { cp } from 'node:fs/promises';
 
 async function main() {
-  const path =  ENV['Title']
+  const path =  process.env.Title
   core.setOutput("path", path);
 
 }
