@@ -45,7 +45,7 @@ jobs:
         Body: ${{ github.event.pull_request.body }}
 
       run: |
-        npm create_template
+        npm run create_template
         
 
   # Build job
@@ -53,6 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MDBOOK_VERSION: 0.4.21
+    needs: create
     steps:
 
       
