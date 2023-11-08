@@ -25,9 +25,6 @@ if (files.length !== 1 || !regex.test(files[0].name)){
   const filename = files[0].name
   const path = './src/templates/' +templateName
   const mdFilePath = `${path}/${templateName}.md`
-
-
-  await mkdir('./src/templates/')
   await mkdir(path)
   await cp('./upload/' +filename, path +"/" +filename)
     await writeFile(mdFilePath,body)
