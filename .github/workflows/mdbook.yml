@@ -25,12 +25,37 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+
+  # Create template job
+  create: 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      name: "Checkout repository"
+    - name: "Setup Node.js"
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+    - name: "Install NodeJS dependencies"
+      run: |
+        npm ci
+    - name: "Get pull request and create new template"
+      env:
+        Title: ${{ github.event.pull_request.title }}
+        Body: ${{ github.event.pull_request.body }}
+
+      run: |
+        npm create_template
+        
+
   # Build job
   build:
     runs-on: ubuntu-latest
     env:
       MDBOOK_VERSION: 0.4.21
     steps:
+
+      
       - uses: actions/checkout@v3
       - name: Install mdBook
         run: |
