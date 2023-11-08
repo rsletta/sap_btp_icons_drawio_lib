@@ -1,6 +1,6 @@
 import { appendFile, cp, mkdir, readFile, readdir, writeFile, rm } from 'node:fs/promises';
 import {setOutput } from '@actions/core';
-import {parse} from 'md-2-json'
+import {parse, toMd} from 'md-2-json'
 /**
  *Json structure of pull request
  *  {
