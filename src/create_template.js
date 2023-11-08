@@ -10,8 +10,8 @@ import {parse} from 'md-2-json'
 }
  */
 async function main() {
-  // const body =  process.env.Body
-  const body = await readFile('./src/templates/principalpropagation/principalpropagation.md', 'utf-8')
+  const body =  process.env.Body
+  // const body = await readFile('./src/templates/principalpropagation/principalpropagation.md', 'utf-8')
 
 const jsonBody = parse(body)
 const templateName = jsonBody.Title.raw.replace(/\s/g, "")
