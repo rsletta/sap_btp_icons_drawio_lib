@@ -18,7 +18,7 @@ const jsonBody = parse(body)
 const templateName = jsonBody.Title.raw.replace(/\s/g, "")
 const files = await readdir("./upload/", { withFileTypes: true, encoding: 'utf-8'})
 const regex = /\.xml$/
-if (files.length !== 1 || !regex.test(files[0].name)){
+if (files.length !== 1 || (!regex.test(files[0].name) && !regex.test(files[1].name))){
   throw new Error("File isn't uploaded into the upload directory or file is not XML")
 } else {
   try {
