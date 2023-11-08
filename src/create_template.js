@@ -3,6 +3,7 @@ import {setOutput } from '@actions/core';
 
 async function main() {
   const path =  process.env.Title
+  console.log(path)
   setOutput("path", path);
 
 }
