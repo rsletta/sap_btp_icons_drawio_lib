@@ -29,7 +29,7 @@ if (files.length !== 1 || !regex.test(files[0].name)){
   await cp('./upload/' +filename, path +"/" +filename)
     await writeFile(`${path}/${templateName}.md`,body)
   await appendFile(`${path}/${templateName}.md`, `\n\n
-  [Open Diagram](https://app.diagrams.net/?create=https://raw.githubusercontent.com/${process.env.Repo}/${process.env.Branch}/src/templates/${templateName}/${filename}))`)
+  [Open Diagram](https://app.diagrams.net/?create=https://raw.githubusercontent.com/${process.env.Repo}/main/src/templates/${templateName}/${filename}))`)
 }
  
 

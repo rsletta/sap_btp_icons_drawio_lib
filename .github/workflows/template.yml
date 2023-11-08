@@ -37,6 +37,9 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 18
+    - name: Determine branch name
+      id: branch_name
+      run: echo ::set-output name=branch::${GITHUB_REF#refs/heads/}
     - name: "Install NodeJS dependencies"
       run: |
         npm ci
@@ -45,7 +48,6 @@ jobs:
         Title: ${{ github.event.pull_request.title }}
         Body: ${{ github.event.pull_request.body }}
         Repo: ${{github.repository}}
-        Branch: ${{github.ref}}
 
       run: |
         npm run create_template
@@ -53,6 +55,6 @@ jobs:
         git config user.email "btpiconbot@users.noreply.github.com"
         git config user.name "BTP Icon Bot"
         git diff --quiet && git diff --staged --quiet || git commit -m "[bot]: Added template"
-        git push origin ${{ github.ref_name }}
+        git push origin ${{ steps.branch_name.outputs.branch }}
         
 
