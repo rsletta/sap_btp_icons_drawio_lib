@@ -53,7 +53,7 @@ jobs:
 
       run: |
         npm run create_template
-        git add -A
+        
         git config user.email "btpiconbot@users.noreply.github.com"
         git config user.name "BTP Icon Bot"
 
