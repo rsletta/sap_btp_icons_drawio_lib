@@ -8,10 +8,12 @@
   "main": "src/index.js",
   "homepage": "https://github.com/mauriciolauffer/sap_btp_icons_drawio_lib#readme",
   "dependencies": {
+    "octokit": "^3.1.1",
     "xml-escape": "^1.1.0"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "create_template": "node src/create_template.js"
   },
   "repository": {
     "type": "git",
