@@ -11,20 +11,21 @@ import {parse, toMd} from 'md-2-json'
  */
 async function main() {
   const body =  process.env.Body
-  // const body = await readFile('./src/templates/principalpropagation/principalpropagation.md', 'utf-8')
+  // const body = await readFile('./test/PR.txt', 'utf-8')
 
 const jsonBody = parse(body)
-
+// console.log(jsonBody)
 const templateName = jsonBody.Title.raw.replace(/\s/g, "")
 const files = await readdir("./upload/", { withFileTypes: true, encoding: 'utf-8'})
 const regex = /\.xml$/
-if (files.length !== 1 || !regex.test(files[0].name)){
+if (files.length !== 2 || (!regex.test(files[0].name) && !regex.test(files[1].name))){
   throw new Error("File isn't uploaded into the upload directory or file is not XML")
 } else {
   try {
-  const filename = files[0].name
+  const filename = files.find((file) => file.name.includes("xml"))?.name
   const path = './src/templates/' +templateName
-  const mdFilePath = `templates/${templateName}/${templateName}.md`
+  const mdFilePath = `./src/templates/${templateName}/${templateName}.md`
+
   await mkdir(path)
   await cp('./upload/' +filename, path +"/" +filename)
     await writeFile(mdFilePath,body)
