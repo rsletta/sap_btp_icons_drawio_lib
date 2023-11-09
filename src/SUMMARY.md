@@ -4,9 +4,6 @@
 
 - [Principal Propagation](templates/principalpropagation/principalpropagation.md)
 
-- [Princip
-
-](templates/Princip/Princip.md)
 # Libraries
 
 - [BTP Icons](../libs/latest.md)
