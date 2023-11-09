@@ -34,7 +34,7 @@ if (files.length !== 2 || (!regex.test(files[0].name) && !regex.test(files[1].na
   await rm('./upload/' +filename)
   const summary = await readFile('./src/SUMMARY.md', 'utf-8')
   let summaryBody = parse(summary)
-  summaryBody.Templates.raw += `- [${jsonBody.Title.raw}](templates/${templateName}/${templateName}.md`)\n`
+  summaryBody.Templates.raw = summaryBody.Templates.raw +`- [${jsonBody.Title.raw}](templates/${templateName}/${templateName}.md)\n`
   await writeFile('./src/SUMMARY.md', toMd(summaryBody))
 
   }
