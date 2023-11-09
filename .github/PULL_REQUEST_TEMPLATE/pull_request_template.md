@@ -9,3 +9,6 @@
 # Image
 [Insert Image]
 
+## Tags / Keywords
+
+[Insert additional tags here]

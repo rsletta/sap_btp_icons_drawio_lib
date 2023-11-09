@@ -31,7 +31,7 @@ if (files.length !== 2 || (!regex.test(files[0].name) && !regex.test(files[1].na
   await cp('./upload/' +filename, path +"/" +filename)
     await writeFile(mdFilePath,body)
   await appendFile(mdFilePath, `\n\n
-  [Open Diagram](https://app.diagrams.net/?create=https://raw.githubusercontent.com/${process.env.Repo}/main/src/templates/${templateName}/${filename})`)
+  [Open Diagram](https://app.diagrams.net/?create=https://raw.githubusercontent.com/${process.env.Repo}/main/src/templates/${templateName}/${filename}&clibs=Uhttps://raw.githubusercontent.com/mauriciolauffer/sap_btp_icons_drawio_lib/main/libs/SAP_BTP_Service_Icons_latest.xml`)
   await rm('./upload/' +filename)
   const summary = await readFile('./src/SUMMARY.md', 'utf-8')
   let summaryBody = parse(summary)
