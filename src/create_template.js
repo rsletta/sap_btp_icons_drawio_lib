@@ -16,6 +16,7 @@ async function main() {
 const jsonBody = parse(body)
 // console.log(jsonBody)
 const templateName = jsonBody.Title.raw.replace(/\s/g, "")
+  const rawName = jsonBody.Title.raw.replace(/(?<!\s)\n/g, '');
 const files = await readdir("./upload/", { withFileTypes: true, encoding: 'utf-8'})
 const regex = /\.xml$/
 if (files.length !== 2 || (!regex.test(files[0].name) && !regex.test(files[1].name))){
@@ -34,7 +35,7 @@ if (files.length !== 2 || (!regex.test(files[0].name) && !regex.test(files[1].na
   await rm('./upload/' +filename)
   const summary = await readFile('./src/SUMMARY.md', 'utf-8')
   let summaryBody = parse(summary)
-  summaryBody.Templates.raw = summaryBody.Templates.raw +`- [${jsonBody.Title.raw.replace(/(?<!\s)\n/g, '')}](templates/${templateName}/${templateName}.md)\n`
+  summaryBody.Templates.raw = summaryBody.Templates.raw +`- [${rawName}](templates/${templateName}/${templateName}.md)\n\n`
   await writeFile('./src/SUMMARY.md', toMd(summaryBody))
 
   }
