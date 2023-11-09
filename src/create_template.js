@@ -22,7 +22,7 @@ if (files.length !== 2 || (!regex.test(files[0].name) && !regex.test(files[1].na
   throw new Error("File isn't uploaded into the upload directory or file is not XML")
 } else {
   try {
-  const filename = files[0].name
+  const filename = files.find((file) => file.name.includes("xml"))?.name
   const path = './src/templates/' +templateName
   const mdFilePath = `templates/${templateName}/${templateName}.md`
   await mkdir(path)
