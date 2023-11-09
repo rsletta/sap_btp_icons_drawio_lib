@@ -24,7 +24,7 @@ if (files.length !== 2 || (!regex.test(files[0].name) && !regex.test(files[1].na
   try {
   const filename = files.find((file) => file.name.includes("xml"))?.name
   const path = './src/templates/' +templateName
-  const mdFilePath = `templates/${templateName}/${templateName}.md`
+  const mdFilePath = `./src/templates/${templateName}/${templateName}.md`
   await mkdir(path)
   await cp('./upload/' +filename, path +"/" +filename)
     await writeFile(mdFilePath,body)
