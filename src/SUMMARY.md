@@ -7,3 +7,5 @@
 # Libraries
 
 - [BTP Icons](../libs/latest.md)
+
+[README](readme.md)
