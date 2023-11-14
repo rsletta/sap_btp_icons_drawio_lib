@@ -8,4 +8,4 @@
 
 - [BTP Icons](https://raw.githubusercontent.com/uxkjaer/sap_btp_icons_drawio_lib/main//libs/latest.md)
 
-[README](https://raw.githubusercontent.com/uxkjaer/sap_btp_icons_drawio_lib/main/README.md)
+[Github Repo](https://github.com/rsletta/sap_btp_icons_drawio_lib)
