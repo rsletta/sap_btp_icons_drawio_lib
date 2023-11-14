@@ -33,7 +33,7 @@ async function main() {
             return shape;
         });
         const payload = `<mxlibrary>\n${JSON.stringify(mappedData)}\n</mxlibrary>`;
-        await writeFile('./libs/SAP_BTP_Service_Icons_latest.xml', payload);
+        await writeFile('./src/libs/SAP_BTP_Service_Icons_latest.xml', payload);
 
     } catch (err) {
         console.error(err);
