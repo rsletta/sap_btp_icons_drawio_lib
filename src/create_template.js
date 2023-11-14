@@ -32,6 +32,11 @@ if (files.length !== 2 || (!regex.test(files[0].name) && !regex.test(files[1].na
     await writeFile(mdFilePath,body)
   await appendFile(mdFilePath, `\n\n
   [Open Diagram](https://app.diagrams.net/?create=https://raw.githubusercontent.com/${process.env.Repo}/main/src/templates/${templateName}/${filename}&clibs=Uhttps://raw.githubusercontent.com/mauriciolauffer/sap_btp_icons_drawio_lib/main/libs/SAP_BTP_Service_Icons_latest.xml)`)
+
+  await appendFile(mdFilePath, `\n\n## Desktop Client Draw.io\n\n
+  To use in desktop client use the following link and import with template url: \n
+  https://raw.githubusercontent.com/${process.env.Repo}/main/src/templates/${templateName}/${filename}&clibs=Uhttps://raw.githubusercontent.com/mauriciolauffer/sap_btp_icons_drawio_lib/main/libs/SAP_BTP_Service_Icons_latest.xml)`)
+
   await rm('./upload/' +filename)
   const summary = await readFile('./src/SUMMARY.md', 'utf-8')
   let summaryBody = parse(summary)
