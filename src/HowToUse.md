@@ -2,7 +2,7 @@
 
 Look through the templates or use the search to search for keywords or templates.
 
-![Search](image.png)
+![Search](./image.png)
 
 Each template will have a short description and an image that shows the template. The link will open up diagrams.net and the template for you to continue working on it.
 
