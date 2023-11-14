@@ -4,10 +4,8 @@
 
 - [Principal Propagation](templates/principalpropagation/principalpropagation.md)
 
-- [Princip](templates/Princip/Princip.md)
-
 # Libraries
 
-- [BTP Icons](../libs/latest.md)
+- [BTP Icons](https://raw.githubusercontent.com/uxkjaer/sap_btp_icons_drawio_lib/main//libs/latest.md)
 
-[README](readme.md)
+[README](https://raw.githubusercontent.com/uxkjaer/sap_btp_icons_drawio_lib/main/README.md)
