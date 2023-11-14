@@ -6,6 +6,6 @@
 
 # Libraries
 
-- [BTP Icons](https://raw.githubusercontent.com/uxkjaer/sap_btp_icons_drawio_lib/main//libs/latest.md)
+- [BTP Icons](../libs/latest.md)
 
 [Github Repo](https://github.com/rsletta/sap_btp_icons_drawio_lib)
