@@ -6,8 +6,8 @@ name: Create template from uploads
 
 on:
   # Runs on pushes targeting the default branch
-  pull_request:
-    types: [opened, reopened]
+  pull_request_target:
+    types: [opened, reopened, synchronize]
 
 
 

@@ -15,8 +15,7 @@
   },
   "scripts": {
     "start": "node src/index.js",
-    "create_template1": "node src/create_template.js",
-"create_template": "cd upload && ls"
+    "create_template": "node src/create_template.js"
   },
   "repository": {
     "type": "git",
