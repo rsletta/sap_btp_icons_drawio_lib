@@ -6,6 +6,8 @@
 
 - [[Title]](templates/[Title]/[Title].md)
 
+- [Hire New Employee](templates/HireNewEmployee/HireNewEmployee.md)
+
 # Libraries
 
 - [BTP Icons](libs/latest.md)
