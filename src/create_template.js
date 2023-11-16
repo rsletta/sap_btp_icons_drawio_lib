@@ -10,8 +10,8 @@ import {parse, toMd} from 'md-2-json'
 }
  */
 async function main() {
-  // const body =  process.env.Body
-  const body = await readFile('./test/PR.txt', 'utf-8')
+  const body =  process.env.Body
+  // const body = await readFile('./test/PR.txt', 'utf-8')
 
 const jsonBody = parse(body)
 // console.log(jsonBody)
