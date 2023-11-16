@@ -10,8 +10,8 @@ import {parse, toMd} from 'md-2-json'
 }
  */
 async function main() {
-  const body =  process.env.Body
-  // const body = await readFile('./test/PR.txt', 'utf-8')
+  // const body =  process.env.Body
+  const body = await readFile('./test/PR.txt', 'utf-8')
 
 const jsonBody = parse(body)
 // console.log(jsonBody)
@@ -24,11 +24,12 @@ if (files.length !== 2 || (!regex.test(files[0].name) && !regex.test(files[1].na
 } else {
   try {
   const filename = files.find((file) => file.name.includes("xml"))?.name
+  const targetFileName = filename.replace(/\s/g, "")
   const path = './src/templates/' +templateName
   const mdFilePath = `./src/templates/${templateName}/${templateName}.md`
 
   await mkdir(path)
-  await cp('./upload/' +filename, path +"/" +filename)
+  await cp('./upload/' +filename, path +"/" +targetFileName)
     await writeFile(mdFilePath,body)
   await appendFile(mdFilePath, `\n\n
   [Open Diagram](https://app.diagrams.net/?create=https://raw.githubusercontent.com/${process.env.Repo}/main/src/templates/${templateName}/${filename}&clibs=Uhttps://raw.githubusercontent.com/mauriciolauffer/sap_btp_icons_drawio_lib/main/libs/SAP_BTP_Service_Icons_latest.xml)`)
