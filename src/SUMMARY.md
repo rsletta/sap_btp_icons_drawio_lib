@@ -6,6 +6,8 @@
 
 - [Hire New Employee](templates/HireNewEmployee/HireNewEmployee.md)
 
+- [CAPM - DevOps](templates/CAPM-DevOps/CAPM-DevOps.md)
+
 # Libraries
 
 - [BTP Icons](libs/latest.md)
