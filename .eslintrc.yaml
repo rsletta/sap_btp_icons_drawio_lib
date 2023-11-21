@@ -1,0 +1,5 @@
+root: true
+extends:
+  - eslint-config-mlauffer-nodejs
+parserOptions:
+  sourceType: module
