@@ -9,17 +9,16 @@ import {parse, toMd} from 'md-2-json';
 }
  */
 async function main() {
-  const body = process.env.Body;
-  const jsonBody = parse(body);
-  const templateName = jsonBody.Title.raw.replace(/\s/g, '');
-  const rawName = jsonBody.Title.raw.replace(/\n/g, '');
   const files = await readdir('./upload/', {withFileTypes: true, encoding: 'utf-8'});
   const regex = /\.xml$/;
   if (files.length !== 2 || (!regex.test(files[0].name) && !regex.test(files[1].name))) {
     throw new Error('File isn\'t uploaded into the upload directory or file is not XML');
   }
-
   try {
+    const body = process.env.Body;
+    const jsonBody = parse(body);
+    const templateName = jsonBody.Title.raw.replace(/\s/g, '');
+    const rawName = jsonBody.Title.raw.replace(/\n/g, '');
     const filename = files.find((file) => file.name.includes('xml'))?.name;
     const targetFileName = filename.replace(/\s/g, '');
     const path = `./src/templates/${templateName}`;
