@@ -38,13 +38,10 @@ How a DevOps process could look like for CAPM apps on SAP BTP.
 
 CAP, CAPM, Node.js, Java, cTMS, CICD, DevOps, Business Application Studio
 
-
-
-  [Open Diagram](https://app.diagrams.net/?create=https://raw.githubusercontent.com/rsletta/sap_btp_icons_drawio_lib/main/src/templates/CAPM-DevOps/SAP BTP - CAP _ DevOps.drawio.xml&clibs=Uhttps://raw.githubusercontent.com/mauriciolauffer/sap_btp_icons_drawio_lib/main/libs/SAP_BTP_Service_Icons_latest.xml)
+  [Open Diagram](https://app.diagrams.net/?create=https://raw.githubusercontent.com/rsletta/sap_btp_icons_drawio_lib/main/src/templates/CAPM-DevOps/SAPBTP-CAP_DevOps.drawio.xml&clibs=Uhttps://raw.githubusercontent.com/mauriciolauffer/sap_btp_icons_drawio_lib/main/libs/SAP_BTP_Service_Icons_latest.xml)
 
 ## Desktop Client Draw.io
 
+To use in desktop client use the following link and import with template url: 
 
-  To use in desktop client use the following link and import with template url: 
-
-  https://raw.githubusercontent.com/rsletta/sap_btp_icons_drawio_lib/main/src/templates/CAPM-DevOps/SAP BTP - CAP _ DevOps.drawio.xml&clibs=Uhttps://raw.githubusercontent.com/mauriciolauffer/sap_btp_icons_drawio_lib/main/libs/SAP_BTP_Service_Icons_latest.xml)
+https://raw.githubusercontent.com/rsletta/sap_btp_icons_drawio_lib/main/src/templates/CAPM-DevOps/SAPBTP-CAP_DevOps.drawio.xml&clibs=Uhttps://raw.githubusercontent.com/mauriciolauffer/sap_btp_icons_drawio_lib/main/libs/SAP_BTP_Service_Icons_latest.xml
