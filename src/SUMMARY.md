@@ -18,6 +18,8 @@
 
 - [CAPM - SAP Integration Suite](templates/CAPM-SAPIntegrationSuite/CAPM-SAPIntegrationSuite.md)
 
+- [CAPM - Cloud Systems](templates/CAPM-CloudSystems/CAPM-CloudSystems.md)
+
 # Libraries
 
 - [BTP Icons](libs/latest.md)
