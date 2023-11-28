@@ -14,6 +14,8 @@
 
 - [CAPM - Logging](templates/CAPM-Logging/CAPM-Logging.md)
 
+- [CAPM - SAP Datasphere](templates/CAPM-SAPDatasphere/CAPM-SAPDatasphere.md)
+
 # Libraries
 
 - [BTP Icons](libs/latest.md)
