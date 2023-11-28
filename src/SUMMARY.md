@@ -16,6 +16,8 @@
 
 - [CAPM - SAP Datasphere](templates/CAPM-SAPDatasphere/CAPM-SAPDatasphere.md)
 
+- [CAPM - SAP Integration Suite](templates/CAPM-SAPIntegrationSuite/CAPM-SAPIntegrationSuite.md)
+
 # Libraries
 
 - [BTP Icons](libs/latest.md)
