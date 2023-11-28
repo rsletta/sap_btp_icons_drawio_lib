@@ -8,6 +8,8 @@
 
 - [CAPM - DevOps](templates/CAPM-DevOps/CAPM-DevOps.md)
 
+- [CAPM - HANA](templates/CAPM-HANA/CAPM-HANA.md)
+
 # Libraries
 
 - [BTP Icons](libs/latest.md)
