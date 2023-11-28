@@ -25,7 +25,7 @@ async function main() {
     const mdFilePath = `./src/templates/${templateName}/${templateName}.md`;
 
     await mkdir(path);
-    await cp(`./upload/${filename}${path}/${targetFileName}`);
+    await cp(`./upload/${filename}`, `${path}/${targetFileName}`);
     await writeFile(mdFilePath, body);
     await appendFile(mdFilePath, `\n\n
 [Open Diagram in the browser](https://app.diagrams.net/?create=https://raw.githubusercontent.com/${process.env.Repo}/main/src/templates/${templateName}/${filename}&clibs=Uhttps://raw.githubusercontent.com/rsletta/sap_btp_icons_drawio_lib/main/libs/SAP_BTP_Service_Icons_latest.xml)`);
@@ -40,6 +40,7 @@ https://raw.githubusercontent.com/${process.env.Repo}/main/src/templates/${templ
     summaryBody.Templates.raw = `${summaryBody.Templates.raw}- [${rawName}](templates/${templateName}/${templateName}.md)\n\n`;
     await writeFile('./src/SUMMARY.md', toMd(summaryBody));
   } catch (err) {
+    console.error(err); // eslint-disable-line no-console
     throw new Error(err);
   }
 }
