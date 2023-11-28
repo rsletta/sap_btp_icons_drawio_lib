@@ -12,6 +12,8 @@
 
 - [CAPM - Microservice - HANA](templates/CAPM-Microservice-HANA/CAPM-Microservice-HANA.md)
 
+- [CAPM - Logging](templates/CAPM-Logging/CAPM-Logging.md)
+
 # Libraries
 
 - [BTP Icons](libs/latest.md)
