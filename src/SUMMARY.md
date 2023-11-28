@@ -10,6 +10,8 @@
 
 - [CAPM - HANA](templates/CAPM-HANA/CAPM-HANA.md)
 
+- [CAPM - Microservice - HANA](templates/CAPM-Microservice-HANA/CAPM-Microservice-HANA.md)
+
 # Libraries
 
 - [BTP Icons](libs/latest.md)
