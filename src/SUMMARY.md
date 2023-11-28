@@ -20,6 +20,8 @@
 
 - [CAPM - Cloud Systems](templates/CAPM-CloudSystems/CAPM-CloudSystems.md)
 
+- [CAPM - On-Premise Systems](templates/CAPM-On-PremiseSystems/CAPM-On-PremiseSystems.md)
+
 # Libraries
 
 - [BTP Icons](libs/latest.md)
