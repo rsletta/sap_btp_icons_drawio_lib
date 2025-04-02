@@ -17,7 +17,7 @@ Reference Architecture of Workzone standard
 WorkZone Build
 
 
-[Open Diagram in the browser](https://app.diagrams.net/?create=https://raw.githubusercontent.com/rsletta/sap_btp_icons_drawio_lib/main/src/templates/SAPBuildWorkZoneStandard/Workzone Standard.xml&clibs=Uhttps://raw.githubusercontent.com/rsletta/sap_btp_icons_drawio_lib/main/libs/SAP_BTP_Service_Icons_latest.xml)
+[Open Diagram in the browser](https://app.diagrams.net/?create=https://raw.githubusercontent.com/rsletta/sap_btp_icons_drawio_lib/main/src/templates/SAPBuildWorkZoneStandard/WorkzoneStandard.xml&clibs=Uhttps://raw.githubusercontent.com/rsletta/sap_btp_icons_drawio_lib/main/libs/SAP_BTP_Service_Icons_latest.xml)
 
 ## Desktop Client Draw.io
 
