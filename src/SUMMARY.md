@@ -23,6 +23,8 @@
 
   - [CAPM - On-Premise Systems](templates/CAPM-On-PremiseSystems/CAPM-On-PremiseSystems.md)
 
+- [SAP Build Work Zone Standard](templates/SAPBuildWorkZoneStandard/SAPBuildWorkZoneStandard.md)
+
 # Libraries
 
 - [BTP Icons](libs/latest.md)
